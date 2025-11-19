@@ -447,7 +447,7 @@ def main():
         print(f"    当前 --version 输出：\n{ver_raw}")
         return
 
-    p = argparse.ArgumentParser(description="文本验证码识别（限时+分层 + 多配置 + 投票）工具版")
+    p = argparse.ArgumentParser(description="文本验证码识别")
     p.add_argument('-u','--url', required=True)
     p.add_argument('-r','--username')
     p.add_argument('-R','--userlist')
@@ -521,4 +521,5 @@ def main():
     print("\n--- 暴力破解模拟结束 ---")
 
 if __name__ == '__main__':
+
     main()
